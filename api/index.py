@@ -21,7 +21,3 @@ def proxy():
     return (response.content, response.status_code, headers)
   except requests.exceptions.RequestException as e:
     return str(e), 500
-
-
-if __name__ == '__main__':
-  app.run(host='0.0.0.0', port=3000)
